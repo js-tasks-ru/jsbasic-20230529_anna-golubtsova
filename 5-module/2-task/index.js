@@ -13,8 +13,13 @@ function toggleText() {
   });*/
 
   //вариант 3
-  btnElement.addEventListener('click', () => {
+  /*btnElement.addEventListener('click', () => {
     txtElement.toggleAttribute('hidden');
+  });*/
+
+  //вариант 4:
+  btnElement.addEventListener('click', () => {
+    txtElement.hidden = !txtElement.hidden;
   });
 }
 
